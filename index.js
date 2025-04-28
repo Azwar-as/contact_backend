@@ -27,10 +27,10 @@ app.post("/send/email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       subject: `Message from ${name}`,
-      text: message,
+      text: `From: ${email}\n\n${message}`,
       replyTo: email,
     });
 
