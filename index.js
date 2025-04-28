@@ -14,7 +14,7 @@ app.use(bodyParser.json()); // Untuk JSON
 app.use(express.json()); // Untuk membaca data JSON
 
 // Route untuk mengirim email
-app.post("/send-email", async (req, res) => {
+app.post("/send/email", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
