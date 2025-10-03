@@ -1,7 +1,10 @@
 {
   "name": "contact_backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/send-email.js",
+  "dependecies" :{
+    "nodemailer" : "^6.10.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
